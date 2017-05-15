@@ -1,0 +1,47 @@
+@import "vars"
+
+@media only screen and (max-width : 480px)
+	.content
+    width: auto
+    #header
+      height: auto
+      line-height: normal
+      margin-top: 10px
+      padding-bottom: 12px
+      .logo
+        width: 110px
+        margin-top: 0
+        height: auto
+        padding-right: 10px
+        line-height: normal
+        &::after
+          height: 26px
+          top: 2px
+        img
+          width: 100%
+      .top_descriptor
+        font-size: 13px
+        line-height: 32px
+        letter-spacing: 1px
+        height: 32px
+      .telephone
+        height: 32px
+        margin-top: 10px
+        line-height: 32px
+        text-align: center
+        width: 100%
+        float: left
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        .whatsapp
+          display: inline-block
+          font-size: 22px
+        &::after
+          margin-top: 0
+          float: none
+          display: inline-block
+  #main_section
+    display: none

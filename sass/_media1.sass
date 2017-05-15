@@ -1,0 +1,207 @@
+@import "vars"
+
+@media only screen and (max-width : 415px)
+	.content
+    width: auto
+    .order_main
+      margin-left: -8px
+      margin-right: -8px
+      box-shadow: 0 0 21px rgba(#000, .1)
+      padding-top: 38px
+      float: left
+      padding-bottom: 40px
+      &::after
+        content: ''
+        display: block
+        clear: both
+      form
+        padding: 0
+        float: left
+        margin-left: 25px
+        margin-right: 25px
+        .form-group
+          width: 100%
+          margin-right: 0
+          margin-bottom: 15px
+          &:nth-child(2)
+            margin-bottom: 0
+          &.btn-form
+            margin-top: 38px
+      h3
+        margin-left: 25px
+        margin-right: 25px
+        margin-top: 0
+    #main_section
+      text-align: center
+      .go_bottom
+        &.mobile
+          display: block
+          float: left
+          width: 100%
+          margin-bottom: 42px
+        &.pc
+          display: none
+    .main_section
+      background: url('../img/mobile.png') no-repeat
+      display: inline-block
+      width: 380px
+      .main_background
+        &.pc
+          display: none
+        &.mobile
+          width: 380px
+          display: block
+          height: 380px
+          position: relative
+          footer
+            position: absolute
+            height: 180px
+            width: 380px
+            position: absolute
+            box-sizing: border-box
+            padding-left: 60px
+            padding-top: 49px
+            padding-right: 50px
+            left: 0
+            bottom: 0
+            ul
+              padding-left: 45px
+            .i_flowers
+              &::before
+                background-position: -118px -67px
+                height: 23px
+                width: 23px
+                left: -45px
+            .i_smile
+              &::before
+                background-position: -160px -67px
+                height: 23px
+                width: 23px
+                left: -45px
+            li
+              font-size: 15px
+              line-height: 24px
+              letter-spacing: 1px
+          header
+            height: 180px
+            width: 380px
+            position: absolute
+            box-sizing: border-box
+            padding-left: 200px
+            padding-top: 80px
+            padding-right: 50px
+            left: 0
+            top: 0
+            .i_car
+              position: relative
+              padding: 0
+              margin: 0
+              padding-top: 37px
+              text-transform: uppercase
+              font-size: 15px
+              letter-spacing: 2px
+              &::before
+                top: 0
+                left: 50%
+                background-position: -81px -67px
+                width: 25px
+                height: 16px
+                transform: translate(-50%, 0)
+    #products
+      .tabs
+        .tab
+          margin-bottom: 25px
+          span
+            font-family: $default-font
+      .tab_container
+        .tab_item
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-flow: row wrap
+          justify-content: center
+          .item_content
+            margin-right: 0
+    #header,
+    #prefooter
+      height: auto
+      line-height: normal
+      margin-top: 10px
+      padding-bottom: 12px
+      .logo
+        width: 110px
+        margin-top: 0
+        height: auto
+        padding-right: 10px
+        line-height: normal
+        margin-left: 0
+        &::after
+          height: 26px
+          top: 2px
+        img
+          width: 100%
+      .top_descriptor
+        font-size: 13px
+        line-height: 32px
+        letter-spacing: 2px
+        padding-left: 12px
+        height: 32px
+      .telephone
+        height: 32px
+        margin-top: 10px
+        line-height: 32px
+        text-align: center
+        width: 100%
+        float: left
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        justify-content: center
+        .whatsapp
+          display: inline-block
+          font-size: 22px
+        &::after
+          margin-top: 0
+          float: none
+          display: inline-block
+    #prefooter
+      margin-top: 50px
+      padding-top: 16px
+      margin-bottom: 0
+    #footer
+      margin-top: 22px
+      padding-bottom: 0
+      .web_studio
+        padding-top: 25px
+        width: 100%
+        text-align: center
+        display: block
+        span
+          width: 100%
+          display: block
+          float: left
+      .nav_foot
+        width: 100%
+        margin: 0
+        position: relative
+        padding-bottom: 15px
+        &::after
+          content: ''
+          height: 1px
+          width: 100%
+          background: $gradient
+          position: absolute
+          display: block
+          bottom: -1px
+        ul
+          text-align: center
+          width: 100%
+          li
+            float: none
+            margin-right: 0
+            display: block
+            a
+              display: block
+              height: 34px
+              line-height: 34px
