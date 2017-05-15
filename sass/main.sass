@@ -99,6 +99,8 @@ body
 	float: left
 	width: 100%
 	margin-bottom: 29px
+	&.page
+		margin-bottom: 15px
 	&::after
 		content: ''
 		display: block
@@ -803,5 +805,111 @@ body
 		font-size: 15px
 		font-family: $light-font
 		text-align: center
+
+//Главная страница
+.page_cont
+	margin-left: 15px
+	.breadcrumbs
+		color: #7f7f7f
+		font-family: $light-font
+		float: left
+		width: 100%
+		margin-bottom: 35px
+		span
+			margin-left: 2px
+			margin-right: 2px
+		a
+			font-size: 14px
+			color: #7f7f7f
+			font-family: $light-font
+			letter-spacing: 2px
+	.info_page
+		float: left
+		width: 100%
+		margin-bottom: 120px
+		.text_info
+			text-align: left
+			font-size: 18px
+			letter-spacing: 1px
+			font-family: $light-font
+			line-height: 24px
+			padding-left: 15px
+			p
+				margin: 0
+				margin-bottom: 30px
+			.postqiwi
+				padding-left: 50px
+				span
+					color: #6d6d6d
+				p
+					margin: 0
+			.qiwi
+				margin-bottom: 30px
+			.handsnake,
+			.cart,
+			.qiwi
+				padding-left: 50px
+				position: relative
+			.handsnake
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					top: -5px
+					left: 0
+					height: 35px
+					width: 35px
+					background: url('../img/icon.png')
+					background-position: -480px 0px
+			.cart
+				span
+					margin-top: 20px
+					display: block
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					top: 0px
+					left: 0
+					height: 22px
+					width: 32px
+					background: url('../img/icon.png')
+					background-position: -436px -11px
+			.qiwi
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					top: 0px
+					left: 0
+					height: 39px
+					width: 32px
+					background: url('../img/icon.png')
+					background-position: -534px -8px
+		.title_and_icon
+			text-align: center
+			width: 100%
+			margin-bottom: 50px
+			.ip_container
+				display: inline-block
+				h1
+					font-size: 18px
+					line-height: normal
+					letter-spacing: 2px
+					padding-bottom: 15px
+					margin-top: 10px
+					position: relative
+					text-align: center
+					display: block
+					width: 127px
+					&::after
+						position: absolute
+						content: ''
+						display: block
+						height: 3px
+						width: 100%
+						border-radius: 10px
+						bottom: -3px
+						background: $gradient
 @import "magnific"
 @import "media1" // Всегда в конце
