@@ -1,4 +1,8 @@
 $(function() {
+	$('.buy_pr').click(function(){
+		var form = $(this).data('form');
+		$('#fast__order input[name="form_subject"]').val(form);
+	});
 	$('.popup-modal').magnificPopup();
 	$(document).on('click', '.popup-modal-dismiss', function (e) {
 		e.preventDefault();
@@ -26,6 +30,23 @@ $(function() {
 		}
 	});
 
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+				$.magnificPopup.close();
+				$.magnificPopup.open({
+					items: {
+						src: '#order__sucess'
+					},
+					type: 'inline'
+				});
+		});
+		return false;
+	});
 
 	$('a[href*="#"]:not([href="#"])').not('.popup-modal').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -1,5 +1,15 @@
 <ifModule mod_expires.c>
 
+RewriteEngine on
+
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://duriskz.github.io/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ https://duriskz.github.io/$1 [R=301,L]
+
 # Add correct content-type for fonts
 AddType application/vnd.ms-fontobject .eot
 AddType application/x-font-ttf .ttf

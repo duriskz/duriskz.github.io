@@ -378,7 +378,9 @@ body
 				padding-left: 35px
 				padding-right: 35px
 				padding-top: 20px
-				padding-bottom: 35px
+				width: 100%
+				box-sizing: border-box
+				padding-bottom: 25px
 				float: left
 				.title_pr
 					font-size: 19.5px
@@ -391,7 +393,7 @@ body
 					line-height: 65px
 					border-top: 1px solid #e7e7e7
 					border-bottom: 1px solid #e7e7e7
-					margin-bottom: 20px
+					margin-bottom: 25px
 					.old_price
 						float: left
 						color: #d92828
@@ -416,6 +418,7 @@ body
 						color: #000
 						font-family: $light-font
 				.speed_ord
+					display: none
 					float: left
 					width: 100%
 					text-align: center
@@ -542,6 +545,10 @@ body
 					transform: rotate(360deg)
 	.tab_item
 		opacity: 0
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		flex-flow: row wrap
 		transition: opacity 1s
 		float: left
 		max-width: 0
